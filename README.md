@@ -1,4 +1,4 @@
-## Command
+# Command
 
-# Build Project
+## Build Project
 npm run build:github
