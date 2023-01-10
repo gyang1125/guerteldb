@@ -12,7 +12,8 @@ export class GuertelDetailComponent implements OnChanges, OnInit {
 
   @Input() guertel?: Guertel;
   imgPath!: String;
-  
+  github_repo: String = "guerteldb";
+
   constructor() {
   }
 
@@ -20,7 +21,7 @@ export class GuertelDetailComponent implements OnChanges, OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.imgPath = "/assets/images/"+this.guertel?.nummer+".jpg";
+    this.imgPath = this.github_repo + "/assets/images/"+this.guertel?.nummer+".jpg";
     console.log(this.imgPath);
   }
 
