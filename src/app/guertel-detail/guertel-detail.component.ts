@@ -21,7 +21,7 @@ export class GuertelDetailComponent implements OnChanges, OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.imgPath = this.github_repo + "/assets/images/"+this.guertel?.nummer+".jpg";
+    this.imgPath = "assets/images/"+this.guertel?.nummer+".jpg";
     console.log(this.imgPath);
   }
 
